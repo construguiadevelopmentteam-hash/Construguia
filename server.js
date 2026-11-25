@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 // Panel admin en /admin
 app.use('/admin', express.static(path.join(__dirname, 'admin')));
 
-// Tienda pública en /
+// Tienda pública en /  
 app.use('/', express.static(path.join(__dirname, 'tienda')));
 
 app.listen(PORT, () => {
